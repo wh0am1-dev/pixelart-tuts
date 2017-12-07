@@ -1,991 +1,1435 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>GIF Tutorials</title>
-  <link href="https://neko250.github.io/Blog250/favicon.png" rel="icon">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" -->
-  <style type="text/css">
-    body { background: #202020; color: #fff1e8; }
-    .modal { background: rgba(255, 255, 255, 0.5); }
-    .modal-content { background: #202020; }
-    .popover { color: #202020; background: #fff1e8; }
-    .close-button { color: #fff; }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="page-header">
-      <h1>GIF Tutorials<small> :: by <a href="https://www.patreon.com/saint11" target="_blank">saint11</a></small></h1>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Character Idle">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#characterIdleModal">
-          <img src="img/png/character_idle.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Bullets">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#bulletsModal">
-          <img src="img/png/bullets.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Metals">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#metalsModal">
-          <img src="img/png/metals.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Squash &amp; Stretch">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#squashStretchModal">
-          <img src="img/png/squash_stretch.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Motion Blur">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#motionBlurModal">
-          <img src="img/png/motion_blur.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="City Backgrounds">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#cityBackgroundsModal">
-          <img src="img/png/city_backgrounds.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Pixel Art Fundamentals 2">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#fundamentals2Modal">
-          <img src="img/png/fundamentals2.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Vegetation 2">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#vegetation2Modal">
-          <img src="img/png/vegetation2.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Rock Formations">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#rockFormationsModal">
-          <img src="img/png/rock_formations.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Fluids / Slimes">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#fluidsSlimesModal">
-          <img src="img/png/fluids_slimes.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Wings / Flying">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#wingsFlyingModal">
-          <img src="img/png/wings_flying.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Light Magic">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#lightMagicModal">
-          <img src="img/png/light_magic.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Portraits">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#portraitsModal">
-          <img src="img/png/portraits.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Dark Magic">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#darkMagicModal">
-          <img src="img/png/dark_magic.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Spaceship Propulsion">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#spaceshipPropulsionModal">
-          <img src="img/png/spaceship_propulsion.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ruins">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#ruinsModal">
-          <img src="img/png/ruins.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Pixel Art Process">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#pixelArtProcessModal">
-          <img src="img/png/pixel_art_process.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Animation Easing">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#easingModal">
-          <img src="img/png/easing.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Render Tricks">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#renderTricksModal">
-          <img src="img/png/render_tricks.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Parallax &amp; Depth">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#parallaxModal">
-          <img src="img/png/parallax.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Machines &amp; Weird Tech">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#machinesModal">
-          <img src="img/png/machines.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Explosions">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#explosionsModal">
-          <img src="img/png/explosions.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Subpixel Movement">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#subpixelMovementModal">
-          <img src="img/png/subpixel_movement.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Animation Planning">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#planningModal">
-          <img src="img/png/planning.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Character Design">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#characterDesignModal">
-          <img src="img/png/character_design.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Skulls &amp; Bones">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#skullsAndBonesModal">
-          <img src="img/png/skulls_and_bones.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Vegetation">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#vegetationModal">
-          <img src="img/png/vegetation.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Seamless Looping">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#seamlessLoopingModal">
-          <img src="img/png/seamless_looping.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Fire">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#fireModal">
-          <img src="img/png/fire.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Water">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#waterModal">
-          <img src="img/png/water.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Level Design">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#levelDesignModal">
-          <img src="img/png/level_design.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Glitch Effect">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#glitchEffectModal">
-          <img src="img/png/glitch_effect.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Electricity">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#electricityModal">
-          <img src="img/png/electricity.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Top-Down Run Cycle">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#topDownRunCycleModal">
-          <img src="img/png/top_down_run_cycle.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Pixel Art Fundamentals">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#fundamentalsModal">
-          <img src="img/png/fundamentals.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Run Cycle">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#runCycleModal">
-          <img src="img/png/run_cycle.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Faking Anticipation">
-        <center><button type="button" class="thumbnail" data-toggle="modal" data-target="#anticipationModal">
-          <img src="img/png/anticipation.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Smoke">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#smokeModal">
-          <img src="img/png/smoke.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Attack Animation">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#attackAnimModal">
-          <img src="img/png/attack_anim.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Shine">
-        <center><button class="thumbnail" data-toggle="modal" data-target="#shineModal">
-          <img src="img/png/shine.png" style="max-height: 250px;">
-        </button></center>
-      </div>
-    </div>
-
-    <div class="modal fade" id="characterIdleModal" tabindex="-1" role="dialog" aria-labelledby="characterIdleModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="characterIdleModalLabel">Character Idle</h3>
-            <span class="label label-primary">04/07/2017, 03:18pm</span>
+    <head>
+      <title>GIF Tutorials</title>
+      <link href="https://neko250.github.io/Blog250/favicon.png" rel="icon">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <style type="text/css">
+        body { background: #202020; color: #fff1e8; }
+        .modal { background: rgba(255, 255, 255, 0.5); }
+        .modal-content { background: #202020; }
+        .popover { color: #202020; background: #fff1e8; }
+        .close-button { color: #fff; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="page-header">
+          <h1>GIF Tutorials<small> :: by <a href="https://www.patreon.com/saint11" target="_blank">saint11</a></small></h1>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Sand">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#sandModal">
+              <img src="img/png/sand.png" style="max-height: 250px;">
+            </button></center>
           </div>
-          <div class="modal-body">
-            <center><img src="img/gif/character_idle.gif" style="max-width: 100%;"></center>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Vegetation 3">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#vegetation3Modal">
+              <img src="img/png/vegetation3.png" style="max-height: 250px;">
+            </button></center>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Cuteness">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#cutenessModal">
+              <img src="img/png/cuteness.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Modular Animation">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#modularAnimationModal">
+              <img src="img/png/modular_animation.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Breaking Objects">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#breakingObjectsModal">
+              <img src="img/png/breaking_objects.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Darkness">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#darknessModal">
+              <img src="img/png/darkness.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="UI: 9-Slice">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#9sliceModal">
+              <img src="img/png/9slice.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="1-Bit">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#1bitModal">
+              <img src="img/png/1bit.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Wind">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#windModal">
+              <img src="img/png/wind.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Space / Stars">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#spaceStarsModal">
+              <img src="img/png/space_stars.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Walk Cycle">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#walkCycleModal">
+              <img src="img/png/walk_cycle.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Outlines">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#outlinesModal">
+              <img src="img/png/outlines.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Quadruped">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#quadrupedModal">
+              <img src="img/png/quadruped.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Shading">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#shadingModal">
+              <img src="img/png/shading.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Clouds">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#cloudsModal">
+              <img src="img/png/clouds.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Environmental Hazards">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#environmentalHazardsModal">
+              <img src="img/png/environmental_hazards.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Fabric / Flags">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#fabricFlagsModal">
+              <img src="img/png/fabric_flags.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Blood &amp; Guts">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#bloodAndGutsModal">
+              <img src="img/png/blood_and_guts.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Making Tiles">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#makingTilesModal">
+              <img src="img/png/making_tiles.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Character Idle">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#characterIdleModal">
+              <img src="img/png/character_idle.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Bullets">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#bulletsModal">
+              <img src="img/png/bullets.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Metals">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#metalsModal">
+              <img src="img/png/metals.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Squash &amp; Stretch">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#squashStretchModal">
+              <img src="img/png/squash_stretch.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Motion Blur">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#motionBlurModal">
+              <img src="img/png/motion_blur.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="City Backgrounds">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#cityBackgroundsModal">
+              <img src="img/png/city_backgrounds.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Pixel Art Fundamentals 2">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#fundamentals2Modal">
+              <img src="img/png/fundamentals2.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Vegetation 2">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#vegetation2Modal">
+              <img src="img/png/vegetation2.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Rock Formations">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#rockFormationsModal">
+              <img src="img/png/rock_formations.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Fluids / Slimes">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#fluidsSlimesModal">
+              <img src="img/png/fluids_slimes.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Wings / Flying">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#wingsFlyingModal">
+              <img src="img/png/wings_flying.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Light Magic">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#lightMagicModal">
+              <img src="img/png/light_magic.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Portraits">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#portraitsModal">
+              <img src="img/png/portraits.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Dark Magic">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#darkMagicModal">
+              <img src="img/png/dark_magic.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Spaceship Propulsion">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#spaceshipPropulsionModal">
+              <img src="img/png/spaceship_propulsion.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Ruins">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#ruinsModal">
+              <img src="img/png/ruins.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Pixel Art Process">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#pixelArtProcessModal">
+              <img src="img/png/pixel_art_process.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Animation Easing">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#easingModal">
+              <img src="img/png/easing.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Render Tricks">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#renderTricksModal">
+              <img src="img/png/render_tricks.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Parallax &amp; Depth">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#parallaxModal">
+              <img src="img/png/parallax.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Machines &amp; Weird Tech">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#machinesModal">
+              <img src="img/png/machines.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Explosions">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#explosionsModal">
+              <img src="img/png/explosions.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Subpixel Movement">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#subpixelMovementModal">
+              <img src="img/png/subpixel_movement.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Animation Planning">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#planningModal">
+              <img src="img/png/planning.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Character Design">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#characterDesignModal">
+              <img src="img/png/character_design.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Skulls &amp; Bones">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#skullsAndBonesModal">
+              <img src="img/png/skulls_and_bones.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Vegetation">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#vegetationModal">
+              <img src="img/png/vegetation.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Seamless Looping">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#seamlessLoopingModal">
+              <img src="img/png/seamless_looping.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Fire">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#fireModal">
+              <img src="img/png/fire.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Water">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#waterModal">
+              <img src="img/png/water.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Level Design">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#levelDesignModal">
+              <img src="img/png/level_design.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Glitch Effect">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#glitchEffectModal">
+              <img src="img/png/glitch_effect.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Electricity">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#electricityModal">
+              <img src="img/png/electricity.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Top-Down Run Cycle">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#topDownRunCycleModal">
+              <img src="img/png/top_down_run_cycle.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Pixel Art Fundamentals">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#fundamentalsModal">
+              <img src="img/png/fundamentals.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Run Cycle">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#runCycleModal">
+              <img src="img/png/run_cycle.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Faking Anticipation">
+            <center><button type="button" class="thumbnail" data-toggle="modal" data-target="#anticipationModal">
+              <img src="img/png/anticipation.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Smoke">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#smokeModal">
+              <img src="img/png/smoke.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Attack Animation">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#attackAnimModal">
+              <img src="img/png/attack_anim.png" style="max-height: 250px;">
+            </button></center>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Shine">
+            <center><button class="thumbnail" data-toggle="modal" data-target="#shineModal">
+              <img src="img/png/shine.png" style="max-height: 250px;">
+            </button></center>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="modal fade" id="bulletsModal" tabindex="-1" role="dialog" aria-labelledby="bulletsModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="bulletsModalLabel">Bullets</h3>
-            <span class="label label-primary">27/06/2017, 05:46pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/bullets.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="metalsModal" tabindex="-1" role="dialog" aria-labelledby="metalsModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="metalsModalLabel">Metals</h3>
-            <span class="label label-primary">20/06/2017, 07:36pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/metals.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="squashStretchModal" tabindex="-1" role="dialog" aria-labelledby="squashStretchModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="squashStretchModalLabel">Squash &amp; Stretch</h3>
-            <span class="label label-primary">13/06/2017, 04:42pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/squash_stretch.gif" style="max-width: 100%;"></center>
-            <h4>Links</h4>
-            <div class="btn-group btn-group-justified" role="group">
-              <div class="btn-group" role="group">
-                <a href="https://youtu.be/haa7n3UGyDc" class="btn btn-primary">12 Principles of Animation</a>
+        <div class="modal fade" id="sandModal" tabindex="-1" role="dialog" aria-labelledby="sandModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="sandModalLabel">Sand</h3>
+                <span class="label label-primary">28/11/2017, 02:35pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/sand.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="modal fade" id="motionBlurModal" tabindex="-1" role="dialog" aria-labelledby="motionBlurModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="motionBlurModalLabel">Motion Blur</h3>
-            <span class="label label-primary">06/06/2017, 04:29pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/motion_blur.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="cityBackgroundsModal" tabindex="-1" role="dialog" aria-labelledby="cityBackgroundsModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="cityBackgroundsModalLabel">City Backgrounds</h3>
-            <span class="label label-primary">23/05/2017, 05:42pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/city_backgrounds.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="fundamentals2Modal" tabindex="-1" role="dialog" aria-labelledby="fundamentals2ModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="fundamentals2ModalLabel">Pixel Art Fundamentals 2</h3>
-            <span class="label label-primary">16/05/2017, 06:19pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/fundamentals2.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="vegetation2Modal" tabindex="-1" role="dialog" aria-labelledby="vegetation2ModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="vegetation2ModalLabel">Vegetation 2</h3>
-            <span class="label label-primary">09/05/2017, 05:37pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/vegetation2.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="rockFormationsModal" tabindex="-1" role="dialog" aria-labelledby="rockFormationsModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="rockFormationsModalLabel">Rock Formations</h3>
-            <span class="label label-primary">02/05/2017, 07:51pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/rock_formations.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="fluidsSlimesModal" tabindex="-1" role="dialog" aria-labelledby="fluidsSlimesModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="fluidsSlimesModalLabel">Fluids / Slimes</h3>
-            <span class="label label-primary">25/04/2017, 06:24pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/fluids_slimes.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="wingsFlyingModal" tabindex="-1" role="dialog" aria-labelledby="wingsFlyingModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="wingsFlyingModalLabel">Wings / Flying</h3>
-            <span class="label label-primary">18/04/2017, 04:41pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/wings_flying.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="lightMagicModal" tabindex="-1" role="dialog" aria-labelledby="lightMagicModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="lightMagicModalLabel">Light Magic</h3>
-            <span class="label label-primary">11/04/2017, 05:23pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/light_magic.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="portraitsModal" tabindex="-1" role="dialog" aria-labelledby="portraitsModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="portraitsModalLabel">Portraits</h3>
-            <span class="label label-primary">04/04/2017, 07:46pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/portraits.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="darkMagicModal" tabindex="-1" role="dialog" aria-labelledby="darkMagicModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="darkMagicModalLabel">Dark Magic</h3>
-            <span class="label label-primary">28/03/2017, 08:17pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/dark_magic.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="spaceshipPropulsionModal" tabindex="-1" role="dialog" aria-labelledby="spaceshipPropulsionModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="spaceshipPropulsionModalLabel">Spaceship Propulsion</h3>
-            <span class="label label-primary">21/03/2017, 07:48pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/spaceship_propulsion.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="ruinsModal" tabindex="-1" role="dialog" aria-labelledby="ruinsModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="ruinsModalLabel">Ruins</h3>
-            <span class="label label-primary">21/02/2017, 04:29pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/ruins.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="pixelArtProcessModal" tabindex="-1" role="dialog" aria-labelledby="pixelArtProcessModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="pixelArtProcessModalLabel">Pixel Art Process</h3>
-            <span class="label label-primary">14/02/2017, 07:05pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/pixel_art_process.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="easingModal" tabindex="-1" role="dialog" aria-labelledby="easingModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="easingModalLabel">Animation Easing</h3>
-            <span class="label label-primary">07/02/2017, 09:13pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/easing.gif" style="max-width: 100%;"></center>
-            <h4>Files</h4>
-            <div class="btn-group btn-group-justified" role="group">
-              <div class="btn-group" role="group">
-                <a href="src/easing/main.lua" class="btn btn-primary">main.lua</a>
+        <div class="modal fade" id="vegetation3Modal" tabindex="-1" role="dialog" aria-labelledby="vegetation3ModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="vegetation3ModalLabel">Vegetation 3</h3>
+                <span class="label label-primary">21/11/2017, 04:31pm</span>
               </div>
-              <div class="btn-group" role="group">
-                <a href="src/easing/easing.love" class="btn btn-primary">easing.love</a>
+              <div class="modal-body">
+                <center><img src="img/gif/vegetation3.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="modal fade" id="renderTricksModal" tabindex="-1" role="dialog" aria-labelledby="renderTricksModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="renderTricksModalLabel">Render Tricks</h3>
-            <span class="label label-primary">31/01/2017, 07:50pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/render_tricks.gif" style="max-width: 100%;"></center>
-            <h4>Files</h4>
-            <div class="btn-group btn-group-justified" role="group">
-              <div class="btn-group" role="group">
-                <a href="src/render_tricks/main.lua" class="btn btn-primary">main.lua</a>
+        <div class="modal fade" id="cutenessModal" tabindex="-1" role="dialog" aria-labelledby="cutenessModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="cutenessModalLabel">Cuteness</h3>
+                <span class="label label-primary">07/11/2017, 02:40pm</span>
               </div>
-              <div class="btn-group" role="group">
-                <a href="src/render_tricks/render_tricks.love" class="btn btn-primary">render_tricks.love</a>
+              <div class="modal-body">
+                <center><img src="img/gif/cuteness.gif" style="max-width: 100%;"></center>
+                <h4>Links</h4>
+                <div class="btn-group btn-group-justified" role="group">
+                  <div class="btn-group" role="group">
+                    <a href="https://www.youtube.com/watch?v=9ByQoGs992Y&t=1434s" target="_blank" class="btn btn-primary">Aaron Blaise - How to draw CUTE!</a>
+                  </div>
+                </div>
               </div>
-              <div class="btn-group" role="group">
-                <a href="src/render_tricks/render_tricks_shader.love" class="btn btn-primary">render_tricks_shader.love</a>
-              </div>
-              <div class="btn-group" role="group">
-                <a href="src/render_tricks/render_tricks_shader.zip" class="btn btn-primary">render_tricks_shader.zip</a>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="modal fade" id="parallaxModal" tabindex="-1" role="dialog" aria-labelledby="parallaxModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="parallaxModalLabel">Parallax &amp; Depth</h3>
-            <span class="label label-primary">24/01/2017, 05:51pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/parallax.gif" style="max-width: 100%;"></center>
-            <h4>Files</h4>
-            <div class="btn-group btn-group-justified" role="group">
-              <div class="btn-group" role="group">
-                <a href="src/parallax/main.lua" class="btn btn-primary">main.lua</a>
+        <div class="modal fade" id="modularAnimationModal" tabindex="-1" role="dialog" aria-labelledby="modularAnimationModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="modularAnimationModalLabel">Modular Animation</h3>
+                <span class="label label-primary">01/11/2017, 05:04pm</span>
               </div>
-              <div class="btn-group" role="group">
-                <a href="src/parallax/parallax.love" class="btn btn-primary">parallax.love</a>
+              <div class="modal-body">
+                <center><img src="img/gif/modular_animation.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+        <div class="modal fade" id="breakingObjectsModal" tabindex="-1" role="dialog" aria-labelledby="breakingObjectsModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="breakingObjectsModalLabel">Breaking Objects</h3>
+                <span class="label label-primary">24/10/2017, 03:01pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/breaking_objects.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="darknessModal" tabindex="-1" role="dialog" aria-labelledby="darknessModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="darknessModalLabel">Darkness</h3>
+                <span class="label label-primary">17/10/2017, 01:32pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/darkness.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="9sliceModal" tabindex="-1" role="dialog" aria-labelledby="9sliceModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="9sliceModalLabel">UI: 9-Slice</h3>
+                <span class="label label-primary">10/10/2017, 05:21pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/9slice.gif" style="max-width: 100%;"></center>
+                <h4>Reference:</h4>
+                <center><img src="src/9slice/9slice_names.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="1bitModal" tabindex="-1" role="dialog" aria-labelledby="1bitModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="1bitModalLabel">1-Bit</h3>
+                <span class="label label-primary">26/09/2017, 05:27pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/1bit.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="windModal" tabindex="-1" role="dialog" aria-labelledby="windModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="windModalLabel">Wind</h3>
+                <span class="label label-primary">19/09/2017, 05:50pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/wind.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="spaceStarsModal" tabindex="-1" role="dialog" aria-labelledby="spaceStarsModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="spaceStarsModalLabel">Space / Stars</h3>
+                <span class="label label-primary">12/09/2017, 05:38pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/space_stars.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="walkCycleModal" tabindex="-1" role="dialog" aria-labelledby="walkCycleModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="walkCycleModalLabel">Walk Cycle</h3>
+                <span class="label label-primary">05/09/2017, 05:45pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/walk_cycle.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="outlinesModal" tabindex="-1" role="dialog" aria-labelledby="outlinesModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="outlinesModalLabel">Outlines</h3>
+                <span class="label label-primary">29/08/2017, 06:02pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/outlines.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="quadrupedModal" tabindex="-1" role="dialog" aria-labelledby="quadrupedModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="quadrupedModalLabel">Quadruped</h3>
+                <span class="label label-primary">23/08/2017, 05:40pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/quadruped.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="shadingModal" tabindex="-1" role="dialog" aria-labelledby="shadingModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="shadingModalLabel">Shading</h3>
+                <span class="label label-primary">15/08/2017, 03:32pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/shading.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="cloudsModal" tabindex="-1" role="dialog" aria-labelledby="cloudsModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="cloudsModalLabel">Clouds</h3>
+                <span class="label label-primary">08/08/2017, 05:44pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/clouds.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="environmentalHazardsModal" tabindex="-1" role="dialog" aria-labelledby="environmentalHazardsModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="environmentalHazardsModalLabel">Environmental Hazards</h3>
+                <span class="label label-primary">01/08/2017, 03:00pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/environmental_hazards.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="fabricFlagsModal" tabindex="-1" role="dialog" aria-labelledby="fabricFlagsModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="fabricFlagsModalLabel">Fabric / Flags</h3>
+                <span class="label label-primary">25/07/2017, 03:00pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/fabric_flags.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="bloodAndGutsModal" tabindex="-1" role="dialog" aria-labelledby="bloodAndGutsModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="bloodAndGutsModalLabel">Blood &amp; Guts</h3>
+                <span class="label label-primary">18/07/2017, 05:13pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/blood_and_guts.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="makingTilesModal" tabindex="-1" role="dialog" aria-labelledby="makingTilesModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="makingTilesModalLabel">Making Tiles</h3>
+                <span class="label label-primary">11/07/2017, 06:17pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/making_tiles.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="characterIdleModal" tabindex="-1" role="dialog" aria-labelledby="characterIdleModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="characterIdleModalLabel">Character Idle</h3>
+                <span class="label label-primary">04/07/2017, 03:18pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/character_idle.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="bulletsModal" tabindex="-1" role="dialog" aria-labelledby="bulletsModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="bulletsModalLabel">Bullets</h3>
+                <span class="label label-primary">27/06/2017, 05:46pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/bullets.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="metalsModal" tabindex="-1" role="dialog" aria-labelledby="metalsModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="metalsModalLabel">Metals</h3>
+                <span class="label label-primary">20/06/2017, 07:36pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/metals.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="squashStretchModal" tabindex="-1" role="dialog" aria-labelledby="squashStretchModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="squashStretchModalLabel">Squash &amp; Stretch</h3>
+                <span class="label label-primary">13/06/2017, 04:42pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/squash_stretch.gif" style="max-width: 100%;"></center>
+                <h4>Links</h4>
+                <div class="btn-group btn-group-justified" role="group">
+                  <div class="btn-group" role="group">
+                    <a href="https://youtu.be/haa7n3UGyDc" target="_blank" class="btn btn-primary">12 Principles of Animation</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="motionBlurModal" tabindex="-1" role="dialog" aria-labelledby="motionBlurModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="motionBlurModalLabel">Motion Blur</h3>
+                <span class="label label-primary">06/06/2017, 04:29pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/motion_blur.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="cityBackgroundsModal" tabindex="-1" role="dialog" aria-labelledby="cityBackgroundsModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="cityBackgroundsModalLabel">City Backgrounds</h3>
+                <span class="label label-primary">23/05/2017, 05:42pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/city_backgrounds.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="fundamentals2Modal" tabindex="-1" role="dialog" aria-labelledby="fundamentals2ModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="fundamentals2ModalLabel">Pixel Art Fundamentals 2</h3>
+                <span class="label label-primary">16/05/2017, 06:19pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/fundamentals2.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="vegetation2Modal" tabindex="-1" role="dialog" aria-labelledby="vegetation2ModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="vegetation2ModalLabel">Vegetation 2</h3>
+                <span class="label label-primary">09/05/2017, 05:37pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/vegetation2.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="rockFormationsModal" tabindex="-1" role="dialog" aria-labelledby="rockFormationsModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="rockFormationsModalLabel">Rock Formations</h3>
+                <span class="label label-primary">02/05/2017, 07:51pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/rock_formations.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="fluidsSlimesModal" tabindex="-1" role="dialog" aria-labelledby="fluidsSlimesModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="fluidsSlimesModalLabel">Fluids / Slimes</h3>
+                <span class="label label-primary">25/04/2017, 06:24pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/fluids_slimes.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="wingsFlyingModal" tabindex="-1" role="dialog" aria-labelledby="wingsFlyingModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="wingsFlyingModalLabel">Wings / Flying</h3>
+                <span class="label label-primary">18/04/2017, 04:41pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/wings_flying.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="lightMagicModal" tabindex="-1" role="dialog" aria-labelledby="lightMagicModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="lightMagicModalLabel">Light Magic</h3>
+                <span class="label label-primary">11/04/2017, 05:23pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/light_magic.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="portraitsModal" tabindex="-1" role="dialog" aria-labelledby="portraitsModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="portraitsModalLabel">Portraits</h3>
+                <span class="label label-primary">04/04/2017, 07:46pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/portraits.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="darkMagicModal" tabindex="-1" role="dialog" aria-labelledby="darkMagicModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="darkMagicModalLabel">Dark Magic</h3>
+                <span class="label label-primary">28/03/2017, 08:17pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/dark_magic.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="spaceshipPropulsionModal" tabindex="-1" role="dialog" aria-labelledby="spaceshipPropulsionModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="spaceshipPropulsionModalLabel">Spaceship Propulsion</h3>
+                <span class="label label-primary">21/03/2017, 07:48pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/spaceship_propulsion.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="ruinsModal" tabindex="-1" role="dialog" aria-labelledby="ruinsModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="ruinsModalLabel">Ruins</h3>
+                <span class="label label-primary">21/02/2017, 04:29pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/ruins.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="pixelArtProcessModal" tabindex="-1" role="dialog" aria-labelledby="pixelArtProcessModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="pixelArtProcessModalLabel">Pixel Art Process</h3>
+                <span class="label label-primary">14/02/2017, 07:05pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/pixel_art_process.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="easingModal" tabindex="-1" role="dialog" aria-labelledby="easingModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="easingModalLabel">Animation Easing</h3>
+                <span class="label label-primary">07/02/2017, 09:13pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/easing.gif" style="max-width: 100%;"></center>
+                <h4>Files</h4>
+                <div class="btn-group btn-group-justified" role="group">
+                  <div class="btn-group" role="group">
+                    <a href="src/easing/main.lua" class="btn btn-primary">main.lua</a>
+                  </div>
+                  <div class="btn-group" role="group">
+                    <a href="src/easing/easing.love" class="btn btn-primary">easing.love</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="renderTricksModal" tabindex="-1" role="dialog" aria-labelledby="renderTricksModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="renderTricksModalLabel">Render Tricks</h3>
+                <span class="label label-primary">31/01/2017, 07:50pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/render_tricks.gif" style="max-width: 100%;"></center>
+                <h4>Files</h4>
+                <div class="btn-group btn-group-justified" role="group">
+                  <div class="btn-group" role="group">
+                    <a href="src/render_tricks/main.lua" class="btn btn-primary">main.lua</a>
+                  </div>
+                  <div class="btn-group" role="group">
+                    <a href="src/render_tricks/render_tricks.love" class="btn btn-primary">render_tricks.love</a>
+                  </div>
+                  <div class="btn-group" role="group">
+                    <a href="src/render_tricks/render_tricks_shader.love" class="btn btn-primary">render_tricks_shader.love</a>
+                  </div>
+                  <div class="btn-group" role="group">
+                    <a href="src/render_tricks/render_tricks_shader.zip" class="btn btn-primary">render_tricks_shader.zip</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="parallaxModal" tabindex="-1" role="dialog" aria-labelledby="parallaxModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="parallaxModalLabel">Parallax &amp; Depth</h3>
+                <span class="label label-primary">24/01/2017, 05:51pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/parallax.gif" style="max-width: 100%;"></center>
+                <h4>Files</h4>
+                <div class="btn-group btn-group-justified" role="group">
+                  <div class="btn-group" role="group">
+                    <a href="src/parallax/main.lua" class="btn btn-primary">main.lua</a>
+                  </div>
+                  <div class="btn-group" role="group">
+                    <a href="src/parallax/parallax.love" class="btn btn-primary">parallax.love</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="machinesModal" tabindex="-1" role="dialog" aria-labelledby="machinesModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="machinesModalLabel">Machines &amp; Weird Tech</h3>
+                <span class="label label-primary">17/01/2017, 07:26pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/machines.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="explosionsModal" tabindex="-1" role="dialog" aria-labelledby="explosionsModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="explosionsModallabel">Explosions</h3>
+                <span class="label label-primary">09/01/2017, 10:39pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/explosions.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="subpixelMovementModal" tabindex="-1" role="dialog" aria-labelledby="subpixelMovementModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="subpixelMovementModalLabel">Subpixel Movement</h3>
+                <span class="label label-primary">03/01/2017, 03:02am</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/subpixel_movement.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="planningModal" tabindex="-1" role="dialog" aria-labelledby="planningModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="planningModalLabel">Animation Planning</h3>
+                <span class="label label-primary">26/12/2016, 05:59pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/planning.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="characterDesignModal" tabindex="-1" role="dialog" aria-labelledby="characterDesignModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="characterDesignModalLabel">Character Design</h3>
+                <span class="label label-primary">19/12/2016, 04:33pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/character_design.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="skullsAndBonesModal" tabindex="-1" role="dialog" aria-labelledby="skullsAndBonesModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="skullsAndBonesModalLabel">Skulls &amp; Bones</h3>
+                <span class="label label-primary">12/12/2016, 07:52pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/skulls_and_bones.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="vegetationModal" tabindex="-1" role="dialog" aria-labelledby="vegetationModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="vegetationModalLabel">Vegetation</h3>
+                <span class="label label-primary">05/12/2016, 08:38pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/vegetation.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="seamlessLoopingModal" tabindex="-1" role="dialog" aria-labelledby="seamlessLoopingModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="seamlessLoopingModalLabel">Seamless Looping</h3>
+                <span class="label label-primary">28/11/2016, 12:59pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/seamless_looping.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="fireModal" tabindex="-1" role="dialog" aria-labelledby="fireModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="fireModalLabel">Fire</h3>
+                <span class="label label-primary">21/11/2016, 01:00pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/fire.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="waterModal" tabindex="-1" role="dialog" aria-labelledby="waterModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="waterModalLabel">Water</h3>
+                <span class="label label-primary">14/11/2016, 06:50pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/water.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="levelDesignModal" tabindex="-1" role="dialog" aria-labelledby="levelDesignModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="levelDesignModalLabel">Level Design</h3>
+                <span class="label label-primary">07/11/2016, 09:46pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/level_design.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="glitchEffectModal" tabindex="-1" role="dialog" aria-labelledby="glitchEffectModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="glitchEffectModalLabel">Glitch Effect</h3>
+                <span class="label label-primary">31/10/2016, 07:40pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/glitch_effect.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="electricityModal" tabindex="-1" role="dialog" aria-labelledby="electricityModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="electricityModalLabel">Electricity</h3>
+                <span class="label label-primary">24/10/2016, 08:36pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/electricity.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="topDownRunCycleModal" tabindex="-1" role="dialog" aria-labelledby="topDownRunCycleModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="topDownRunCycleModalLabel">Top-Down Run Cycle</h3>
+                <span class="label label-primary">17/10/2016, 07:42pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/top_down_run_cycle.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="fundamentalsModal" tabindex="-1" role="dialog" aria-labelledby="fundamentalsModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="fundamentalsModalLabel">Pixel Art Fundamentals</h3>
+                <span class="label label-primary">10/10/2016, 11:37pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/fundamentals.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="runCycleModal" tabindex="-1" role="dialog" aria-labelledby="runCycleModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="runCycleModalLabel">Run Cycle</h3>
+                <span class="label label-primary">03/10/2016, 05:03pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/run_cycle.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="anticipationModal" tabindex="-1" role="dialog" aria-labelledby="anticipationModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="anticipationModalLabel">Faking Anticipation</h3>
+                <span class="label label-primary">29/09/2016, 06:34am</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/anticipation.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="smokeModal" tabindex="-1" role="dialog" aria-labelledby="smokeModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="smokeModalLabel">Smoke</h3>
+                <span class="label label-primary">26/09/2016, 03:42pm</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/smoke.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="attackAnimModal" tabindex="-1" role="dialog" aria-labelledby="attackAnimModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="attackAnimModalLabel">Attack Animation</h3>
+                <span class="label label-primary">24/09/2016, 03:06am</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/attack_anim.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="shineModal" tabindex="-1" role="dialog" aria-labelledby="shineModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+                <h3 class="modal-title" id="shineModalLabel">Shine</h3>
+                <span class="label label-primary">24/09/2016, 02:55am</span>
+              </div>
+              <div class="modal-body">
+                <center><img src="img/gif/shine.gif" style="max-width: 100%;"></center>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="modal fade" id="machinesModal" tabindex="-1" role="dialog" aria-labelledby="machinesModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="machinesModalLabel">Machines &amp; Weird Tech</h3>
-            <span class="label label-primary">17/01/2017, 07:26pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/machines.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="explosionsModal" tabindex="-1" role="dialog" aria-labelledby="explosionsModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="explosionsModallabel">Explosions</h3>
-            <span class="label label-primary">09/01/2017, 10:39pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/explosions.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="subpixelMovementModal" tabindex="-1" role="dialog" aria-labelledby="subpixelMovementModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="subpixelMovementModalLabel">Subpixel Movement</h3>
-            <span class="label label-primary">03/01/2017, 03:02am</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/subpixel_movement.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="planningModal" tabindex="-1" role="dialog" aria-labelledby="planningModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="planningModalLabel">Animation Planning</h3>
-            <span class="label label-primary">26/12/2016, 05:59pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/planning.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="characterDesignModal" tabindex="-1" role="dialog" aria-labelledby="characterDesignModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="characterDesignModalLabel">Character Design</h3>
-            <span class="label label-primary">19/12/2016, 04:33pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/character_design.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="skullsAndBonesModal" tabindex="-1" role="dialog" aria-labelledby="skullsAndBonesModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="skullsAndBonesModalLabel">Skulls &amp; Bones</h3>
-            <span class="label label-primary">12/12/2016, 07:52pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/skulls_and_bones.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="vegetationModal" tabindex="-1" role="dialog" aria-labelledby="vegetationModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="vegetationModalLabel">Vegetation</h3>
-            <span class="label label-primary">05/12/2016, 08:38pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/vegetation.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="seamlessLoopingModal" tabindex="-1" role="dialog" aria-labelledby="seamlessLoopingModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="seamlessLoopingModalLabel">Seamless Looping</h3>
-            <span class="label label-primary">28/11/2016, 12:59pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/seamless_looping.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="fireModal" tabindex="-1" role="dialog" aria-labelledby="fireModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="fireModalLabel">Fire</h3>
-            <span class="label label-primary">21/11/2016, 01:00pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/fire.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="waterModal" tabindex="-1" role="dialog" aria-labelledby="waterModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="waterModalLabel">Water</h3>
-            <span class="label label-primary">14/11/2016, 06:50pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/water.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="levelDesignModal" tabindex="-1" role="dialog" aria-labelledby="levelDesignModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="levelDesignModalLabel">Level Design</h3>
-            <span class="label label-primary">07/11/2016, 09:46pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/level_design.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="glitchEffectModal" tabindex="-1" role="dialog" aria-labelledby="glitchEffectModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="glitchEffectModalLabel">Glitch Effect</h3>
-            <span class="label label-primary">31/10/2016, 07:40pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/glitch_effect.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="electricityModal" tabindex="-1" role="dialog" aria-labelledby="electricityModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="electricityModalLabel">Electricity</h3>
-            <span class="label label-primary">24/10/2016, 08:36pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/electricity.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="topDownRunCycleModal" tabindex="-1" role="dialog" aria-labelledby="topDownRunCycleModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="topDownRunCycleModalLabel">Top-Down Run Cycle</h3>
-            <span class="label label-primary">17/10/2016, 07:42pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/top_down_run_cycle.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="fundamentalsModal" tabindex="-1" role="dialog" aria-labelledby="fundamentalsModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="fundamentalsModalLabel">Pixel Art Fundamentals</h3>
-            <span class="label label-primary">10/10/2016, 11:37pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/fundamentals.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="runCycleModal" tabindex="-1" role="dialog" aria-labelledby="runCycleModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="runCycleModalLabel">Run Cycle</h3>
-            <span class="label label-primary">03/10/2016, 05:03pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/run_cycle.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="anticipationModal" tabindex="-1" role="dialog" aria-labelledby="anticipationModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="anticipationModalLabel">Faking Anticipation</h3>
-            <span class="label label-primary">29/09/2016, 06:34am</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/anticipation.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="smokeModal" tabindex="-1" role="dialog" aria-labelledby="smokeModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="smokeModalLabel">Smoke</h3>
-            <span class="label label-primary">26/09/2016, 03:42pm</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/smoke.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="attackAnimModal" tabindex="-1" role="dialog" aria-labelledby="attackAnimModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="attackAnimModalLabel">Attack Animation</h3>
-            <span class="label label-primary">24/09/2016, 03:06am</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/attack_anim.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="shineModal" tabindex="-1" role="dialog" aria-labelledby="shineModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
-            <h3 class="modal-title" id="shineModalLabel">Shine</h3>
-            <span class="label label-primary">24/09/2016, 02:55am</span>
-          </div>
-          <div class="modal-body">
-            <center><img src="img/gif/shine.gif" style="max-width: 100%;"></center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    $(function () { $('[data-toggle="tooltip"]').tooltip(); });
-    $(function () { $('[data-toggle="popover"]').popover(); });
-  </script>
-</body>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+        $(function () { $('[data-toggle="tooltip"]').tooltip(); });
+        $(function () { $('[data-toggle="popover"]').popover(); });
+      </script>
+    </body>
 </html>
